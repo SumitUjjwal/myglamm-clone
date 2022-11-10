@@ -1,21 +1,17 @@
-let slideIndex = 0;
-showSlides();
 
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("slides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 3000);
-}
-
-// search functionality
 
 let url = "https://6369e068c07d8f936d8d6464.mockapi.io/makeUp";
+let output = [];
+
+fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+        output = data.data;
+        displayCard(data)
+    });
+
+
+// search functionality
 
 let searchTerm;
 function search() {
@@ -28,11 +24,12 @@ function searchProduct(term) {
         .then((res) => res.json())
         .then((data) => {
             displayCard(data)
-        });
+        })
+        .catch((err) => displayErr())
 }
 
 function displayCard(data) {
-    document.querySelector("#product-container").innerHTML=null;
+    document.querySelector("#product-container").innerHTML = null;
     data.forEach(element => {
         let div = document.createElement("div");
         div.setAttribute("id", "card");
@@ -53,4 +50,13 @@ function displayCard(data) {
         div.append(img, title, details, price);
         document.querySelector("#product-container").append(div);
     });
+}
+
+function displayErr() {
+    document.querySelector("#product-container").innerHTML = null;
+    let div = document.createElement("div");
+    div.innerText = "404"
+    div.style.fontSize = "100px"
+
+    document.querySelector("#body").append(div)
 }

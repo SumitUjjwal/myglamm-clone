@@ -1,4 +1,3 @@
-
 * {
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
@@ -113,202 +112,87 @@
   display: block;
 }
 
-/* .dropdown-subcontent{
 
-    display: flex;
-    justify-content: space-between;
-    margin: 0%;
-  } */
-  
 /* body */
-
 #body {
-  background-color: #F4F4F4;
-  /* position: relative;
-    z-index: -1; */
-  margin-top: 115px;
-}
-
-/* top section */
-
-/* slide show */
-
-.slideshow {
-  max-width: 100vw;
-  margin: auto;
-  margin-bottom: 10px;
-}
-
-.slideshow img {
-  width: 100%;
-}
-
-
-/* banner-1 */
-#banner1 img {
-  width: 90%;
-  margin: auto;
-  display: block;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-/* banner-2 */
-#banner2 img {
+  background-color: white;
   width: 100%;
   margin: auto;
-  display: block;
-  text-align: center;
-  margin-bottom: 50px;
+  text-decoration: none;
+  /* position: relative; */
+  /* z-index: -1; */
+  margin-top: 140px;
 }
 
-/* in the spotlight */
-
-.spotlight {
-  text-align: center;
-  width: 90%;
-  margin: auto;
-}
-
-.spotlight span {
-  font-size: 30px;
-  font-weight: 700;
-  background-image: linear-gradient(#F4F4F4, #F4F4F4, #ff8787);
-}
-
-.spotlightGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin: 30px auto 50px;
-}
-
-.spotlightGrid img {
-  width: 100%;
-}
-
-/* .textonImage{
-    /* position: relative;
-    bottom: 7px; */
-/* width: 483px;
-    position: absolute;
-    color: black;
-    font-size: 20px;
-    font-weight: 600;
-    background-color: #f4f4f4;
-    padding: 20px 0px;
-    opacity: 0.5;
-    top: 1827px;
-    z-index: 1; */
-
-/* } */
-
-/* essential budget buys */
-.essential {
-  text-align: center;
-  width: 90%;
-  margin: 50px auto;
-}
-
-.essential span {
-  font-size: 30px;
-  font-weight: 700;
-  background-image: linear-gradient(#F4F4F4, #F4F4F4, #ff8787);
-  color: black;
-}
-
-/* .essentialGrid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 30px;
-    margin: 30px auto 50px;
-  } */
-
-.essentialGrid {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.essential img {
+#body>div {
   width: 80%;
+  margin: auto;
 }
 
-
-/* mid section */
-
-/* shop from categories */
-
-.categories {
+/* path bar */
+#path {
   text-align: center;
-  width: 90%;
-  margin: 50px auto;
-}
-
-.categories>span {
-  font-size: 30px;
-  font-weight: 700;
-  background-image: linear-gradient(#F4F4F4, #F4F4F4, #ff8787);
-  color: black;
-}
-
-.categoryGrid {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  text-decoration: none;
   margin-top: 20px;
 }
 
-.categoryGrid img {
-  width: 70%;
-  margin-bottom: 10px;
-  border: 5px solid white;
-  border-radius: 100px;
-}
-
-.categoryGrid span {
-  font-weight: 600;
+#path>a {
   color: black;
-  display: block;
+  font-size: 15px;
 }
 
+#path>:nth-child(2){
+  font-weight: bold;
+}
 
-/* calendar */
+#path>hr{
+  border: 1px solid #9d9d9d;
+}
 
-#calendar {
+/* page name */
+#pageName {
+  text-align: center;
+  margin: 50px;
+}
+
+#pageName>span {
+  font-size: 45px;
+  font-weight: 700;
+  background-color: #FEE8E8;
+}
+
+/* product cards */
+#product-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+#product-container>#card {
+  border: 1px solid rgb(222, 222, 222);
+  background-color: white;
+  text-align: center;
+  color: black;
+  padding: 30px 20px 15px;
   width: 90%;
-  margin: 50px auto;
-  gap: 20px;
+  line-height: 50px;
 }
 
-#calendar img {
-  width: 100%;
+#card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-/* find your shade */
-
-#shade {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 90%;
-  margin: 50px auto;
-  gap: 30px;
+#card>:nth-child(1) {
+  margin: auto;
 }
 
-#shade img {
-  width: 100%;
+#card>img {
+  width: 60%;
+  transition: width 0.8s;
 }
 
-/* bestsellers */
-
-
-
-/* video */
-
-#video {
-  width: 100%;
-  pointer-events: none;
+#card>img:hover {
+  width: 80%;
 }
 
 
@@ -392,4 +276,3 @@
 .socialMedia {
   margin-top: 50px;
 }
-
