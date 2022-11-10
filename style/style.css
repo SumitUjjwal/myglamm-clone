@@ -1,3 +1,4 @@
+
 * {
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
@@ -113,10 +114,12 @@
 }
 
 /* .dropdown-subcontent{
+
     display: flex;
     justify-content: space-between;
     margin: 0%;
   } */
+  
 /* body */
 
 #body {
@@ -197,6 +200,7 @@
     opacity: 0.5;
     top: 1827px;
     z-index: 1; */
+
 /* } */
 
 /* essential budget buys */
@@ -388,3 +392,4 @@
 .socialMedia {
   margin-top: 50px;
 }
+
