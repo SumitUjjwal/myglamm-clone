@@ -29,23 +29,39 @@ function displayProducts(data) {
         let price = document.createElement("h3");
         price.innerText = element.price;
         
+        let count = 1;
+
         let inc = document.createElement("span");
-        inc.innerText = "<";
+        inc.innerText = "+";
         inc.addEventListener("click",function(){
-            quantity = eval(quantity + 1);
-            console.log(quantity)
+            count++;
+            if(count>10){
+                alert("Maximum Quantity limit is 10")
+            }
+            else{
+                quantity.innerText =+ count;
+                total.innerText = eval(count * element.price);
+            }
         })
 
         let dec = document.createElement("span");
-        dec.innerText = ">";
+        dec.innerText = "-";
         dec.addEventListener("click",function(){
-            quantity--;
+            count--;
+            if(count<1){
+                removeProduct(data,index)
+            }
+            else{
+                quantity.innerText =+ count;
+                total.innerText = eval(count * element.price);
+            }
         })
 
-        let quantity = 1;
+        let quantity = document.createElement("span");
+        quantity.innerText = count;
 
         let total = document.createElement("h3");
-        total.innerText = eval(quantity * element.price);
+        total.innerText = eval(count * element.price);
 
         let remove = document.createElement("h3");
         remove.innerText = "X";
@@ -53,7 +69,7 @@ function displayProducts(data) {
             removeProduct(data,index)
         })
 
-        div.append(img,title,price,inc,quantity,dec,remove);
+        div.append(img,title,price,dec,quantity,inc,remove);
         grand.append(total)
         myBag.append(div);
     });

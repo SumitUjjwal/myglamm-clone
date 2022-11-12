@@ -139,7 +139,7 @@
     align-items: center;
     margin: 20px 0px;
   }
-  #products>div>:nth-child(4){
+  /* #products>div>:nth-child(4){
     font-size: 30px;
     position: absolute;
     right: 313px;
@@ -152,7 +152,7 @@
     right: 263px;
     background-color: #F4F4F4;
     padding: 5px;
-  }
+  } */
 
   #grand{
     display: flex;
