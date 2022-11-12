@@ -1,20 +1,27 @@
 
 let signin = document.querySelector("#submit").addEventListener("click", getData);
 
-let arr = JSON.parse(localStorage.getItem("signin")) || [];
+let arr = JSON.parse(localStorage.getItem("signup")) || [];
 
 function getData() {
-
     let next = document.querySelector("#submit");
+
+    let name = document.querySelector("#name").value;
     let phone = document.querySelector("#phone").value;
+    let email = document.querySelector("#email").value;
+    let add1 = document.querySelector("#add1").value;
+    let add2 = document.querySelector("#add2").value;
+    let pin = document.querySelector("#pincode").value;
+    let state = document.querySelector("#state").value;
 
     let obj = {
-        phone
+        name, phone, email, add1, add2, pin, state
     };
 
+    
 
-    if (phone == "" || phone.length < 10) {
-        alert("Enter Correct Phone Number")
+    if (name == "" || phone == "" || email == "" || add1 == "" || pincode == "" || state == "" || phone.length < 10) {
+        alert("Enter Correct Details")
     }
     else if (phone.length == 10) {
         let flag = true;
@@ -23,13 +30,14 @@ function getData() {
                 flag = false;
             }
         });
-        if (flag == true) {
-            alert("User is not Registered")
-            next.setAttribute("href", "signup.html")
+        if (flag == false) {
+            alert("User Already Registered")
+            next.setAttribute("href", "signin.html")
         }
         else {
             arr.push(obj);
             next.setAttribute("href", "verify.html");
+            localStorage.setItem("signup", JSON.stringify(arr));
         }
     }
 }
