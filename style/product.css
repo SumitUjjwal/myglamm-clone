@@ -181,15 +181,18 @@
   font-size: 25px;
 }
 
-#price>span {
-  font-size: 13px;
-  color: #8f8f8f;
-}
-
 #price+span {
   color: #8f8f8f;
-  font-weight: bold;
-  font-size: 18px;
+  /* font-weight: bold; */
+  font-size: 12px;
+}
+
+#mrp{
+  display: flex;
+}
+
+#mrp>:nth-child(1){
+  font-size: 25px;
 }
 
 #shade {
