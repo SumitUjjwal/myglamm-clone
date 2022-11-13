@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shopping-bag</title>
-    <link rel="stylesheet" href="style\cart.css">
+    <title>checkout</title>
+    <link rel="stylesheet" href="style\checkout.css">
     <link rel="icon" type="image/x-icon" href="images\BU__4_-removebg-preview (1)(2).png">
 </head>
 
@@ -209,30 +209,31 @@
         </div>
     </div>
 
-    <!-- body -->
     <div class="body">
+        <!-- body -->
         <div>
-            <div id="bag">
-                <p>MY BAG</p>
+            <p>Checkout</p>
+            <div class="address-order">
+                <p>SHIPPING ADDRESS</p>
                 <hr>
-                <div id="products">
+                <div class="user-details">
+                    <p class="name">Shubham Kumar</p>
+                    <p class="add">Address: <span>New Laxmi Market, Gola Road, Boddom Bazaar, Hazaribagh, Jharkhand, In front of swarnkar bhawanHazaribag, 825301, Jharkhand</span></p>
+                    <p class="phone">Phone: <span>9835372701</span></p>
+                    <p class="email">Email: <span>parthrey69@gmail.com</span></p>
+                    <a href="#">CHANGE</a>
                 </div>
-            </div>
-            <hr>
-            <div id="grand">
-                <p>Grand Total</p>
-                <div>
-                    <p> ₹ </p><span></span>
+                <div class="date">
+                    <p>Expected Delivery Date: <span>16-Nov-2022</span></p>
                 </div>
+                <p>YOUR ORDER</p>
+                <hr>
+                <div class="order"></div>
+                <a class="payment" href="payment.html">PROCEED TO PAYMENT</a>
             </div>
-            <a href="checkout.html">
-                <button id="checkout">
-                    PROCEED TO CHECKOUT
-                </button>
-            </a>
+            
         </div>
     </div>
 </body>
-<script src="script\cart.js"></script>
-
+<script src="script\checkout.js"></script>
 </html>

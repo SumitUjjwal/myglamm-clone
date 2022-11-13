@@ -33,12 +33,14 @@ function displayProducts(data) {
 
         let inc = document.createElement("span");
         inc.innerText = "+";
+        inc.setAttribute("class","incdec");
         inc.addEventListener("click",function(){
-            count++;
-            if(count>10){
+            
+            if(count>=10){
                 alert("Maximum Quantity limit is 10")
             }
             else{
+                count++;
                 quantity.innerText =+ count;
                 total.innerText = eval(count * element.price);
             }
@@ -46,12 +48,14 @@ function displayProducts(data) {
 
         let dec = document.createElement("span");
         dec.innerText = "-";
+        dec.setAttribute("class","incdec");
         dec.addEventListener("click",function(){
-            count--;
+            
             if(count<1){
                 removeProduct(data,index)
             }
             else{
+                count--;
                 quantity.innerText =+ count;
                 total.innerText = eval(count * element.price);
             }
@@ -65,6 +69,7 @@ function displayProducts(data) {
 
         let remove = document.createElement("h3");
         remove.innerText = "X";
+        remove.setAttribute("class","incdec");
         remove.addEventListener("click",function(){
             removeProduct(data,index)
         })
@@ -82,3 +87,16 @@ function removeProduct(data,index){
 }
 
 displayProducts(products)
+
+let inOut = document.querySelector("#user").addEventListener("click", signout);
+let next = document.querySelector("#user");
+function signout() {
+    
+    if ((localStorage.getItem("signup")) == null) {
+        next.setAttribute("href", "signin.html");
+    }
+    else {
+        alert("Signed Out Successfully");
+        localStorage.clear();
+    }
+}

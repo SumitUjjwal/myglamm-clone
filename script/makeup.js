@@ -60,3 +60,16 @@ function displayErr() {
 
     document.querySelector("#body").append(div)
 }
+
+let inOut = document.querySelector("#user").addEventListener("click", signout);
+let next = document.querySelector("#user");
+function signout() {
+    
+    if ((localStorage.getItem("signup")) == null) {
+        next.setAttribute("href", "signin.html");
+    }
+    else {
+        alert("Signed Out Successfully");
+        localStorage.clear();
+    }
+}

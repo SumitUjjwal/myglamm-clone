@@ -1,7 +1,7 @@
 
 let signin = document.querySelector("#submit").addEventListener("click", getData);
 
-let arr = JSON.parse(localStorage.getItem("signin")) || [];
+let arr = JSON.parse(localStorage.getItem("signup")) || [];
 
 function getData() {
 
@@ -25,7 +25,7 @@ function getData() {
         });
         if (flag == true) {
             alert("User is not Registered")
-            next.setAttribute("href", "signup.html")
+            next.setAttribute("href", "signup.html");
         }
         else {
             arr.push(obj);
