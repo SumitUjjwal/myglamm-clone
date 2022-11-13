@@ -27,7 +27,7 @@ function displayProducts(data) {
         title.innerText = element.title;
 
         let price = document.createElement("h3");
-        price.innerText = element.price;
+        price.innerText = "₹" + element.price;
         
         let count = 1;
 
