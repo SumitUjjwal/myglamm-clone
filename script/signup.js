@@ -36,7 +36,7 @@ function getData() {
         }
         else {
             arr.push(obj);
-            next.setAttribute("href", "verify.html");
+            next.setAttribute("href", "verify-signup.html");
             localStorage.setItem("signup", JSON.stringify(arr));
         }
     }

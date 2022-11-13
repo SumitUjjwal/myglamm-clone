@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shopping-bag</title>
-    <link rel="stylesheet" href="style\cart.css">
+    <title>Payment</title>
+    <link rel="stylesheet" href="style\payment.css">
 </head>
 
 <body>
@@ -29,7 +29,9 @@
             <!-- CART AND PROFILE -->
             <div id="right">
                 <a href="cart.html"><img src="images\bag.png" alt="" id="cart"></a>
-                <a id="user"><img src="https://github.com/SumitUjjwal/apathetic-bikes-8091/blob/main/images/user.png?raw=true" alt="user"></a>
+                <a id="user"><img
+                        src="https://github.com/SumitUjjwal/apathetic-bikes-8091/blob/main/images/user.png?raw=true"
+                        alt="user"></a>
             </div>
         </div>
 
@@ -208,30 +210,28 @@
         </div>
     </div>
 
+
+
     <!-- body -->
+
     <div class="body">
         <div>
-            <div id="bag">
-                <p>MY BAG</p>
-                <hr>
-                <div id="products">
+            <div class="payment">
+                <p>Payment</p>
+                <div id="amount">
+                    <p>AMOUNT PAYABLE</p>
+                    <p id="total">000</p>
+                </div>
+                <div id="input">
+                    <input type="text" id="upi" placeholder="Enter Your UPI ID">
+                    <span id="request">REQUEST</span>
                 </div>
             </div>
-            <hr>
-            <div id="grand">
-                <p>Grand Total</p>
-                <div>
-                    <p> ₹ </p><span></span>
-                </div>
-            </div>
-            <a href="checkout.html">
-                <button id="checkout">
-                    PROCEED TO CHECKOUT
-                </button>
-            </a>
         </div>
     </div>
+
+
 </body>
-<script src="script\cart.js"></script>
+<script src="script\payment.js"></script>
 
 </html>
