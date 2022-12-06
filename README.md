@@ -8,7 +8,7 @@ Features:
 • Product Discovery Page
 • Product Cart and Checkout Page
 • Payment gateway Integration 
-• User registration, login and logout page. 
+• User Registration, Login and Logout Page. 
 
 Tech stack: HTML5 | CSS3 | Vanilla JavaScript 
 
