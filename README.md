@@ -13,3 +13,5 @@ Features:
 Tech stack: HTML5 | CSS3 | Vanilla JavaScript 
 
 An individual project built in a time span of 4 days.
+
+Site Deployed : https://bu-sumitujjwal-fw22-0065.netlify.app/index.html
