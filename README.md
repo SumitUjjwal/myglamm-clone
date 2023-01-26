@@ -1,17 +1,16 @@
 # apathetic-bikes-8091
-WEB-101 construct week project, In which I have cloned MyGlamm website.
-MyGlamm is an Indian e-commerce company that sells cosmetics and personal care products.
-MyGlamm was founded in 2015 by Darpan Sanghvi as an at-home beauty salon service.
-In 2017, it was relaunched as an online cosmetic beauty company in India.
+Be You is a clone of an Indian e-commerce site MyGlamm,
+that deals with cosmetics and personal care products.
 
-Features:
+## Features:
 • Product Discovery Page
 • Product Cart and Checkout Page
-• Payment gateway Integration 
-• User Registration, Login and Logout Page. 
+• Payment Gateway Page
+• User Registration, Login and Logout Page.
 
-Tech stack: HTML5 | CSS3 | Vanilla JavaScript 
+## Tech stack: 
+HTML | CSS | Vanilla JavaScript | Git
 
-An individual project built in a time span of 4 days.
+An individual project built in a period of 5 days. 
 
-Site Deployed : https://bu-sumitujjwal-fw22-0065.netlify.app/index.html
+## Deployed URL: https://bu-sumitujjwal-fw22-0065.netlify.app/index.html
