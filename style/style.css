@@ -38,11 +38,15 @@
   justify-content: space-between;
   align-items: center;
   height: 80px;
+  /* border: 1px solid red; */
 }
 
 #left {
+  width: 90%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  /* border: 1px solid blue; */
 }
 
 #left img {
@@ -51,12 +55,38 @@
   margin-top: 35px;
 }
 
+#left>div{
+  /* border: 1px solid black; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#left>div>div{
+  width: 70%;
+  border: 1px solid rgb(216, 216, 216);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FAFAFA;
+  border-radius: 5px;
+  padding: 0px 20px;
+}
+
 #left input {
   height: 40px;
-  width: 500px;
-  border-radius: 5px;
+  width: 95%;
+  /* padding: 0px 20px; */
+  /* border: 1px solid red; */
+  /* border-radius: 5px; */
   background-color: #FAFAFA;
-  border: 1px solid rgb(216, 216, 216);
+  border: none;
+  /* border: 1px solid rgb(216, 216, 216); */
+}
+
+#left input:focus{
+  outline: none;
 }
 
 ::placeholder {
@@ -65,14 +95,26 @@
 }
 
 #right {
+  width: 10%;
   display: flex;
   justify-content: space-around;
+  /* border: 1px solid green; */
 }
 
-#right img {
-  width: 25px;
-  height: 30px;
-  margin: 30px;
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#right span {
+  /* border: 1px solid green; */
+  /* width: 25px;
+  height: 30px; */
+  /* margin: 30px; */
+  color: black;
 }
 
 #down {

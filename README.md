@@ -1,3 +1,4 @@
+
 # apathetic-bikes-8091
 Be You is a clone of an Indian e-commerce site MyGlamm,
 that deals with cosmetics and personal care products.
@@ -14,3 +15,4 @@ HTML | CSS | Vanilla JavaScript | Git
 An individual project built in a period of 5 days. 
 
 ## Deployed URL: https://bu-sumitujjwal-fw22-0065.netlify.app/index.html
+
